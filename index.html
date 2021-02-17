@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="container">  
+    <nav>
+       
+        <img src="img/burger-wh.svg" alt="icone burger" w>
+    </nav>
+
+    <header class ='header'>
+        <h1 id ='title'>Free Code Camp Survey Form</h1>
+        <p id ='description'>Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <form id ='survey-form'>
+        <div class="form-group">
+            <label for ="name" id="name-label">Name</label>
+            <input type ="text" id='name' placeholder ='Enter your name' class ='form-control' required>
+        </div>
+        
+        <div class ="form-group">
+            <label for ="email" id ="email-label">Email</label>
+            <input type ="email" id ='email' placeholder ='Enter your email' class ='form-control' required>
+        </div>
+       
+        <div class ="form-group">
+            <label for ="number" id ="number-label">Age (optional)</label>
+            <input type ="number" id ='number' min='10' max='99' step='1' placeholder ='Age'>
+        </div>
+        
+        <div class ="form-group">
+            <label for="role">Which option best describes your current role?</label>
+            <select name="role" id ="dropdown" class='form-control' required>
+                <option disabled selected value>Select current role</option>
+                    <option value ="student">Student</option>
+                    <option value ="full time job">Full time job</option>
+                    <option value ="full time learner">Full time learner</option>
+                    <option value ="prefer not to say">Prefer not to say</option>
+                    <option value ="other">Other</option>
+            </select>
+        </div>
+        <div class ="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for ="recommand">
+                <input type ='radio' name ='recommand' value='Definitely' class='recommand' checked> Definitely
+            </label> 
+            
+            <label for ="recommand">
+                <input type ='radio' name ='recommand' class='recommand'value='Maybe'>Maybe
+            </label> 
+            <label for ="recommand">
+                <input type ='radio' name ='recommand' class='recommand'value='Not sure'>Not sure
+                </label> 
+        </div>
+
+        <div class ="form-group">
+            <label for ="favorite">What is your favorite feature of freeCodeCamp?</label>
+            <select name ="favorite" id ="dropdowm" class='form-control' required>
+                <option disabled selected value>Select an option</option>
+                <option value ="challenges">Challenges</option>
+                <option value ="projects">Projects</option>
+                <option value ="community">Community</option>
+                <option value ="opensource">Opensource</option>
+            </select>
+        </div>
+
+        <div class ="form-group">
+            <label for="improvement">What would you like to see improved? (Check all that apply)</label>
+                <input type ='checkbox' name='improvement' class='improvement' value='front-end Projects'>Front-end Projects
+                <input type ='checkbox' name='improvement' class='improvement'value='back-end Projects'>Back-end Projects 
+                <input type ='checkbox' name='improvement' class='improvement'value='data Visualization'>Data Visualization 
+                <input type ='checkbox' name='improvement' class='improvement'value='challenges'>Challenges
+                <input type ='checkbox' name='improvement' class='improvement'value='open Source Community'>Open Source Community
+                <input type ='checkbox' name='improvement' class='improvement'value='gitter help rooms'>Gitter help rooms
+                <input type ='checkbox' name='improvement' class='improvement'value='videos'>Videos
+                <input type ='checkbox' name='improvement' class='improvement'value='city Meetups'>City Meetups
+                <input type='checkbox' name='improvement' class='improvement'value='wiki'>Wiki
+                <input type ='checkbox' name='improvement' class='improvement'value='forum'>Forum
+                <input type ='checkbox' name='improvement' class='improvement'value='additional Courses'>Additional Courses
+            </div>
+            <div class="form-group">
+                <label for="comment">Any comments or suggestions?</label>
+                <textarea name="coment" id="commemt"  placeholder='Enter your comment here...'></textarea>
+            </div>
+            
+            <button type='submit' value='submit' id='submit'>Submit</button>
+
+    </form>
+</div>
+
+</body>
+</html>
